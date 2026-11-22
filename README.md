@@ -1,4 +1,4 @@
-# Histoire du Monde
+# ChronoPédia
 
 Site web réalisé dans le cadre d'un projet scolaire dans lequel il fallait crée son site ainsi j'ai choisis de réaliser un site portant sur les grandes périodes de l'Histoire.
 
