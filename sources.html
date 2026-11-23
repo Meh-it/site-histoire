@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sources - ChronoPédia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+
+    <button id="theme-toggle">🌙 Mode Nuit</button>
+
+    <header class="flex">
+
+        <a href="index.html">
+            <img src="img/prehistoire.jpg" width="150" alt="ChronoPédia">
+        </a>
+
+        <ul class="flex">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="Nousrejoindre.html">Nous rejoindre !</a></li>
+            <li><a href="sources.html">Sources</a></li>
+        </ul>
+
+    </header>
+
+    <main class="container">
+
+        <h1>Sources et Bibliographie</h1>
+
+        <p>
+            Cette page rassemble les principales ressources utilisées
+            pour la création du contenu historique présenté sur ChronoPédia.
+            Les informations ont été sélectionnées à partir de références
+            éducatives et documentaires reconnues.
+        </p>
+
+        <table>
+
+            <caption>
+                Répartition des sources utilisées
+            </caption>
+
+            <thead>
+
+                <tr>
+
+                    <th>Période</th>
+
+                    <th>Internet et documents historiques</th>
+
+                    <th>Travail personnel</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>Préhistoire</td>
+
+                    <td>Oui</td>
+
+                    <td>Non</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Antiquité</td>
+
+                    <td>Oui</td>
+
+                    <td>Non</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Moyen Âge</td>
+
+                    <td>Oui</td>
+
+                    <td>Non</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Temps Modernes</td>
+
+                    <td>Oui</td>
+
+                    <td>Non</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <h2>Principales références</h2>
+
+        <div class="grid-plantes">
+
+            <article class="fiche-plante">
+
+                <img src="img/prehistoire.jpg" alt="Préhistoire">
+
+                <h3>Préhistoire</h3>
+
+                <p>
+                    Musées archéologiques, ressources pédagogiques
+                    et documentation sur les premiers peuplements humains.
+                </p>
+
+            </article>
+
+            <article class="fiche-plante">
+
+                <img src="img/1000x563_sc_4000x1000.jpg" alt="Antiquité">
+
+                <h3>Antiquité</h3>
+
+                <p>
+                    Études consacrées aux civilisations grecques,
+                    romaines et égyptiennes.
+                </p>
+
+            </article>
+
+            <article class="fiche-plante">
+
+                <img src="img/2745132-moyen-age-610x370.jpg" alt="Moyen Âge">
+
+                <h3>Moyen Âge</h3>
+
+                <p>
+                    Ouvrages historiques sur la féodalité,
+                    les croisades et les royaumes médiévaux.
+                </p>
+
+            </article>
+
+            <article class="fiche-plante">
+
+                <img src="img/epoque-industrielle-web-1024x487.jpg" alt="Temps Modernes">
+
+                <h3>Temps Modernes</h3>
+
+                <p>
+                    Documentation sur la Renaissance,
+                    les découvertes maritimes et l'industrialisation.
+                </p>
+
+            </article>
+
+        </div>
+
+        <h2>Remerciements</h2>
+
+        <p>
+            Merci à l'ensemble des ressources éducatives,
+            bibliothèques numériques, musées et documents historiques
+            qui ont permis la réalisation de ce projet pédagogique.
+        </p>
+
+    </main>
+
+    <footer class="flex">
+
+        <ul>
+
+            <li>
+                <a href="mentions.html">Mentions</a>
+            </li>
+
+            <li>
+                <a href="https://www.instagram.com">Instagram</a>
+            </li>
+
+        </ul>
+
+    </footer>
+
+    <script>
+
+        const btn = document.getElementById("theme-toggle");
+
+        btn.addEventListener("click", () => {
+
+            document.body.classList.toggle("dark-mode");
+
+            if (document.body.classList.contains("dark-mode")) {
+
+                btn.textContent = "☀️ Mode Jour";
+
+            } else {
+
+                btn.textContent = "🌙 Mode Nuit";
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>

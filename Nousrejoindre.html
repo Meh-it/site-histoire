@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nous rejoindre - ChronoPédia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+
+</head>
+
+<body>
+
+<button id="theme-toggle">🌙 Mode Nuit</button>
+
+<header class="flex">
+
+    <a href="index.html">
+        <img src="img/prehistoire.jpg" width="150" alt="ChronoPédia">
+    </a>
+
+    <ul class="flex">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="Nousrejoindre.html">Nous rejoindre !</a></li>
+        <li><a href="sources.html">Sources</a></li>
+    </ul>
+
+</header>
+
+<main class="container">
+
+    <h1>Rejoindre ChronoPédia</h1>
+
+    <p>
+        Passionné d'histoire ? Rejoignez notre projet et participez
+        à la création d'une encyclopédie historique accessible à tous.
+        Nous recherchons des rédacteurs, chercheurs et amateurs
+        souhaitant partager leurs connaissances.
+    </p>
+
+    <form>
+
+        <fieldset>
+
+            <legend>Formulaire de candidature</legend>
+
+            <input
+                type="text"
+                placeholder="Nom (obligatoire)"
+                required>
+
+            <input
+                type="text"
+                placeholder="Prénom (obligatoire)"
+                required>
+
+            <input
+                type="email"
+                placeholder="Adresse e-mail"
+                required>
+
+            <input
+                type="tel"
+                placeholder="Téléphone">
+
+            <p>Civilité</p>
+
+            <h3>
+                Homme
+                <label>
+                    <input type="radio" name="civilite">
+                </label>
+            </h3>
+
+            <h3>
+                Femme
+                <label>
+                    <input type="radio" name="civilite">
+                </label>
+            </h3>
+
+            <h3>
+                Autre
+                <label>
+                    <input type="radio" name="civilite">
+                </label>
+            </h3>
+
+            <h2>Rôle souhaité</h2>
+
+            <select>
+
+                <option disabled selected>
+                    Choisir :
+                </option>
+
+                <option>
+                    Historien amateur
+                </option>
+
+                <option>
+                    Rédacteur historique
+                </option>
+
+                <option>
+                    Chercheur
+                </option>
+
+                <option>
+                    Correcteur
+                </option>
+
+            </select>
+
+            <h2>Période historique favorite</h2>
+
+            <select>
+
+                <option>
+                    Préhistoire
+                </option>
+
+                <option>
+                    Antiquité
+                </option>
+
+                <option>
+                    Moyen Âge
+                </option>
+
+                <option>
+                    Temps Modernes
+                </option>
+
+            </select>
+
+            <textarea
+                placeholder="Présentez votre parcours, vos centres d'intérêt historiques et les raisons pour lesquelles vous souhaitez rejoindre ChronoPédia."></textarea>
+
+            <p>
+                Vous acceptez que vos informations puissent être conservées
+                afin d'être recontacté ultérieurement.
+            </p>
+
+            <label>
+                <input type="checkbox" required>
+                J'accepte les conditions.
+            </label>
+
+            <br><br>
+
+            <input
+                type="submit"
+                value="Envoyer ma candidature">
+
+        </fieldset>
+
+    </form>
+
+    <h2>Pourquoi nous rejoindre ?</h2>
+
+    <div class="grid-plantes">
+
+        <article class="fiche-plante">
+
+            <img src="img/prehistoire.jpg">
+
+            <h3>Partager sa passion</h3>
+
+            <p>
+                Contribuez à la diffusion des connaissances historiques.
+            </p>
+
+        </article>
+
+        <article class="fiche-plante">
+
+            <img src="img/2745132-moyen-age-610x370.jpg">
+
+            <h3>Participer à un projet culturel</h3>
+
+            <p>
+                Aidez au développement d'une encyclopédie moderne.
+            </p>
+
+        </article>
+
+        <article class="fiche-plante">
+
+            <img src="img/epoque-industrielle-web-1024x487.jpg">
+
+            <h3>Développer ses compétences</h3>
+
+            <p>
+                Recherche, rédaction et vulgarisation historique.
+            </p>
+
+        </article>
+
+    </div>
+
+</main>
+
+<footer class="flex">
+
+<ul>
+
+<li class="plus1">
+<a href="mentions.html">
+Mentions
+</a>
+</li>
+
+<li class="plus2">
+<a href="https://www.instagram.com">
+Instagram
+</a>
+</li>
+
+</ul>
+
+</footer>
+
+<script>
+
+btn = document.getElementById("theme-toggle");
+
+btn.addEventListener("click", function () {
+
+document.body.classList.toggle("dark-mode");
+
+if(document.body.classList.contains("dark-mode")){
+btn.textContent="☀️ Mode Jour";
+}
+else{
+btn.textContent="🌙 Mode Nuit";
+}
+
+});
+
+</script>
+
+</body>
+</html>
